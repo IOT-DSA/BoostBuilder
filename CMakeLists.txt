@@ -56,6 +56,7 @@ set(Boost_INSTALLED_LIBRARIES
   )
 set(Boost_CONFIGURE_ARGS )
 set(Boost_BUILD_ARGS )
+set(Boost_COMPILER_ARGS )
 
 #-----------------------------------------------------------------------
 # VARIANTS
@@ -127,7 +128,7 @@ Boost_Get_ToolsetId(_boost_toolset)
 #https://cdcvs.fnal.gov/redmine/projects/build-framework/repository/boost-ssi-build/revisions/master/entry/build_boost.sh
 
 # For GCC/Clang (could also add logic for 1y/14)
-set(Boost_CXX_STANDARD_FLAGS "-std=c++11")
+set(Boost_CXX_STANDARD_FLAGS "-std=c++11 ${Boost_COMPILER_ARGS}")
 
 # For Apple, though Mavericks onwards should defaualt to libc++
 if(CMAKE_COMPILER_ID STREQUAL "AppleClang")
