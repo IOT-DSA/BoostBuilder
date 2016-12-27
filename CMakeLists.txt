@@ -56,7 +56,6 @@ set(Boost_INSTALLED_LIBRARIES
   )
 set(Boost_CONFIGURE_ARGS )
 set(Boost_BUILD_ARGS )
-set(Boost_COMPILER_ARGS )
 
 #-----------------------------------------------------------------------
 # VARIANTS
