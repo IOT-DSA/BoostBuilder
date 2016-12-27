@@ -31,7 +31,7 @@ include(GNUInstallDirs)
 
 # Basic Boost Parameters
 set(Boost_MAJOR_VERSION 1)
-set(Boost_MINOR_VERSION 59)
+set(Boost_MINOR_VERSION 62)
 set(Boost_SUBMINOR_VERSION 0)
 set(Boost_VERSION "${Boost_MAJOR_VERSION}.${Boost_MINOR_VERSION}.${Boost_SUBMINOR_VERSION}")
 
@@ -160,11 +160,11 @@ endif()
 #
 include(ExternalProject)
 ExternalProject_Add(boost
-  URL                 "https://downloads.sourceforge.net/project/boost/boost/1.59.0/boost_1_59_0.tar.bz2"
-  URL_HASH            SHA256=727a932322d94287b62abb1bd2d41723eec4356a7728909e38adb65ca25241ca
+  URL                 "https://downloads.sourceforge.net/project/boost/boost/1.62.0/boost_1_62_0.tar.bz2"
+  URL_HASH            SHA1=5fd97433c3f859d8cbab1eaed4156d3068ae3648
 
   # If sourceforge downloads barf, copy by hand and stick it next to this
-  #URL                 ${PROJECT_SOURCE_DIR}/boost_1_59_0.tar.bz2
+  #URL                 ${PROJECT_SOURCE_DIR}/boost_1_62_0.tar.bz2
 
   BUILD_IN_SOURCE     1
   CONFIGURE_COMMAND   <SOURCE_DIR>/bootstrap.sh
